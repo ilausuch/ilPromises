@@ -43,4 +43,14 @@ TODO
 
 ## ilPromiseSync Reference
 
-TODO
+```javascript
+var sync = new ilPromiseSync().then(function () {
+    //TODO Something when finish
+})
+
+sync.addTask(function (task) {
+    //TODO Do something async and call task ready, when it finish
+    task.ready(data);
+})
+
+````
